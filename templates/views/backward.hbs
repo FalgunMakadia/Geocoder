@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Backward Geocoding</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" href="/img/weather.png">
+    </head>
+    <body>
+        {{>header}}
+        <p>Backward Geocoding here</p>
+        <form>
+            <input type="text" placeholder="Latitude" id="i1">
+            <input type="text" placeholder="Longitude" id="i2">
+            <button>Search</button>
+        </form>
+        <p id="m1"></p>
+        {{>footer}}
+        <script src='/js/backwardclient.js'></script>
+    </body>
+</html>
