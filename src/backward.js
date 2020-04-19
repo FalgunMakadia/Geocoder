@@ -6,7 +6,7 @@ const backward_geocoding = (latitude, longitude, callback) => {
     request({ url, json:true }, (error, response) => {
         if(error) {
             callback('Can not connect to the network.', undefined)
-        } else if(response.body.features === 0) {
+        } else if(response.body.features.length === 0) {
             callback('Unable to find location. Try another search.', undefined)
         } else {
             callback(undefined, {
