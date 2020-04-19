@@ -5,6 +5,7 @@ const forward = require('./forward')
 const backward = require('./backward') 
 
 const app = express()
+const port = process.env.PORT || 3000
 
 const pathToPublic = path.join(__dirname, '../public')
 const pathToViews = path.join(__dirname, '../templates/views')
@@ -77,6 +78,6 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Geocode server is up on port 3000>>>')
+app.listen(port, () => {
+    console.log('Geocode server is up on port '+port)
 })

@@ -8,7 +8,7 @@ const m2 = document.querySelector('#m2')
 forwardForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const location = search.value
-    fetch('http://localhost:3000/forwardprocess?location=' + encodeURIComponent(location)).then((response) => {
+    fetch('/forwardprocess?location=' + encodeURIComponent(location)).then((response) => {
     response.json().then((data) => {
         if(data.error){
             m1.textContent = 'Error : '+data.error

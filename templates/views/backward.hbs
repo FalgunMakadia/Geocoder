@@ -5,14 +5,18 @@
         <link rel="icon" href="/img/weather.png">
     </head>
     <body>
+        <div class="main-content">
         {{>header}}
-        <p>Backward Geocoding here</p>
+        <br>
+        <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Enter Latitude and Longitude to convert them into a Location</p>
+        <br>
         <form>
             <input type="text" placeholder="Latitude" id="i1">
             <input type="text" placeholder="Longitude" id="i2">
             <button>Search</button>
         </form>
         <p id="m1"></p>
+        </div>
         {{>footer}}
         <script src='/js/backwardclient.js'></script>
     </body>

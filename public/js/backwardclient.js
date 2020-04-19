@@ -9,7 +9,7 @@ forwardForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const latitude = lati.value
     const longitude = longi.value
-    fetch('http://localhost:3000/backwardprocess?lati='+encodeURIComponent(latitude)+'&longi='+encodeURIComponent(longitude)).then((response) => {
+    fetch('/backwardprocess?lati='+encodeURIComponent(latitude)+'&longi='+encodeURIComponent(longitude)).then((response) => {
     response.json().then((data) => {
         if(data.error){
             m1.textContent = 'Error : '+data.error

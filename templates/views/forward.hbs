@@ -5,13 +5,18 @@
         <link rel="icon" href="/img/weather.png">
     </head>
     <body>
+        <div class="main-content">
         {{>header}}
+        <br>
+        <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Enter a Location to get it's Latitude and Longitude</p>
+        <br>
         <form>
             <input type="text" placeholder="Location">
             <button>Search</button>
         </form>
         <p id="m1"></p>
         <p id="m2"></p>
+        </div>
         {{>footer}}
         <script src='/js/forwardclient.js'></script>
     </body>
