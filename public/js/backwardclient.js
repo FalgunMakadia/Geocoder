@@ -1,5 +1,3 @@
-console.log('Client side Backward Geocoding java script!')
-
 const forwardForm = document.querySelector('form')
 const lati = document.querySelector('#i1')
 const longi = document.querySelector('#i2')
